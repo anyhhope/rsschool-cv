@@ -1,1 +1,1 @@
-# rsschool-cv
+https://anyhhope.github.io/rsschool-cv/cv
