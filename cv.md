@@ -19,7 +19,22 @@ I'm a quick, inquiring and efficient student, entered University with no IT back
 * VS Code, IntelliJ IDEA
 ***
 ## Code example:
-
+The C++ implementation of searching several substrings in original string in trie:
+```
+for(int j = 0; j < line.length(); j++){
+        node *cur_v = root;
+        for (int i = j; i < line.length(); i++) {
+            char c = line[i];
+            if( cur_v->next[c - 'a'] != nullptr) {
+                if(cur_v->next[c - 'a']->strings != -1) ans[cur_v->next[c - 'a']->strings] = 1;
+            }
+            else{
+                break;
+            }
+            cur_v = cur_v->next[c - 'a'];
+        }
+    }
+```
 ***
 ## Education:
 * **University MISIS:** Informatics and Computer engineering major, *Intelligent Systems for Data Analysis* speciality (second year)  
