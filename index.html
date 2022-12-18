@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="head">
+        <div class="container">
+            <div class="header-line">
+                <div class="nav">
+                    <a class="nav-item" href="#skills-display">Skills</a>
+                    <a class="nav-item" href="#edu-display">Education</a>
+                    <a class="nav-item" href="#project-display">Projects</a>
+                    <a class="nav-item" href="#languages-display">Languages</a>
+                </div>
+            </div>
+            <div class="header-down">
+                <div class="header-title">
+                    <h1>NADEZHDA ANISIMOVA</h1>
+                </div>
+                <div class="about-me">
+                    <p>I'm a second-year student of University MISIS majoring in Informatics and Computer engineering,
+                        <span>Intelligent Systems for Data Analysis</span>. This semester having only algorithms to
+                        study, I feel the huge need to explore other possibilities in IT. Frontend Development will 
+                        allow me to implement all ideas
+                        I have, being keen on visualisation and practical use.
+                    </p>
+                    <p>I'm a quick, inquiring and efficient student, entered University with no IT background, now I'm
+                        earning
+                        best scores. I hope my exploration of Frontend Development will be successful.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contacts-photo">
+            <div class="container">
+                <div class="contacts-photo-holder">
+                    <div class="contacts">
+                        <h2>Contact information:</h2>
+                        <ul>
+                            <li><span>Location:</span> Moscow, Russia</li>
+                            <li><span>E-mail:</span> anyh0pe@yandex.ru</li>
+                            <li><span>Telegram:</span> @anyhhope</li>
+                            <li><span>Github:</span> <a class="gitref" href="https://github.com/anyhhope" target="_blank">anyhhope</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-image">
+                        <img src="assets/img/front_img.jpg" alt="Photo of Nadezhda Anisismova">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-code">
+            <div class="container">
+                <div class="skills-code-holder">
+                    <div class="skills" id="skills-display">
+                        <ul>
+                            <li class="skill-item1">C++</li>
+                            <li class="skill-item2">Python <span>(basic knowledge)</span></li>
+                            <li class="skill-item3">Git, Github</li>
+                            <li class="skill-item4">VS Code, IntelliJ IDEA</li>
+                        </ul>
+                    </div>
+                    <div class="code">
+                        <h2>Code example:</h2>
+                        <p>The C++ implementation of searching several substrings in original string in trie:</p>
+<pre>
+for(int j = 0; j &lt; line.length(); j++){
+    node *cur_v = root;
+    for (int i = j; i &lt; line.length(); i++) {
+        char c = line[i];
+        if( cur_v->next[c - 'a'] != nullptr) {
+            if(cur_v->next[c - 'a']->strings != -1) 
+                ans[cur_v->next[c - 'a']->strings] = 1;
+        }
+        else{
+            break;
+        }
+        cur_v = cur_v->next[c - 'a'];
+    }
+}
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education" id="edu-display">
+            <div class="container">
+                <h2 class="education-title">Education:</h2>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <ul class="edu-item-item">
+                            <li class="education-year">September, <br> 2021 - now</li>
+                            <li class="education-status">In Progress</li>
+                            <li class="education-degree">Informatics and Computer engineering major, Intelligent Systems for Data Analysis speciality (second year)</li>
+                            <li class="education-place">
+                                <a href="https://misis.ru/" target="_blank">University MISIS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="education-item">
+                        <ul class="edu-item-item">
+                            <li class="education-year">December, <br> 2022 - now</li>
+                            <li class="education-status">In Progress</li>
+                            <li class="education-degree">JS/FE Pre-School Course</li>
+                            <li class="education-place">
+                                <a href="https://rs.school/" target="_blank">Rolling Scopes School</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects" id="project-display">
+            <div class="container">
+                <div class="projects-holder">
+                    <div class="project-info">
+                        <h2 class="projects-title">Projects:</h2>
+                        <p class="project-cv">
+                            This CV is my first and only project. <br>
+                            There'll be more very soon :)
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <a href="#head">
+                            <img src="assets/img/cv.png" alt="Project CV">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="languages" id="languages-display">
+            <div class="container">
+                <h2>Languages:</h2>
+                <ul class="languages-list">
+                    <li class="languages-list-item1">English - C1
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="language-half-dark"></li>
+                        </ul>
+                    </li>
+                    <li class="languages-list-item2">Spanish - A1
+                        <ul>
+                            <li></li>
+                            <li class="language-dark-point"></li>
+                            <li class="language-dark-point"></li>
+                            <li class="language-dark-point"></li>
+                            <li class="language-dark-point"></li>
+                        </ul>
+                    </li>
+                    <li class="languages-list-item2">Russian - native
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-items">
+                <li class="author-item"><a href="https://github.com/anyhhope" class="author" target="_blank">© 2022 by Nadezhda Anisismova</a></li>
+                <li class="rs-school-img"><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs school logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
