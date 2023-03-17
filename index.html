@@ -77,14 +77,14 @@ for(int j = 0; j &lt; line.length(); j++){
     node *cur_v = root;
     for (int i = j; i &lt; line.length(); i++) {
         char c = line[i];
-        if( cur_v-&gtnext[c - 'a'] != nullptr) {
-            if(cur_v-&gtnext[c - 'a']-&gtstrings != -1) 
-                ans[cur_v-&gtnext[c - 'a']-&gtstrings] = 1;
+        if( cur_v-&gt;next[c - 'a'] != nullptr) {
+            if(cur_v-&gt;next[c - 'a']-&gt;strings != -1) 
+                ans[cur_v-&gt;next[c - 'a']-&gt;strings] = 1;
         }
         else{
             break;
         }
-        cur_v = cur_v-&gtnext[c - 'a'];
+        cur_v = cur_v-&gt;next[c - 'a'];
     }
 }
 </pre>
